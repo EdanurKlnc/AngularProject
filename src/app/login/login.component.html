@@ -1,0 +1,34 @@
+<section class="main-section">
+  <div class="container">
+    <div class="user loginbox">
+      <div class="imagebox">
+        <img src="/assets/arkaplan.jpeg">
+      </div>
+      <div class="formbox">
+        <div class="form">
+          <h2>Giriş Yap</h2>
+
+          <form [formGroup]="login" (ngSubmit)="onSubmit(login)">
+
+            <div class="mb-3">
+              <input  type="text" id="fname" placeholder="Kullanıcı Adı" formControlName="firstname">
+            </div>
+
+            <div class="mb-3">
+              <input  formControlName="password" type="password"  id="exampleInputPassword1" placeholder="Şifre">
+            </div>
+
+            <button type="submit" class="btngiris" >Giriş Yap</button>
+          </form>
+
+          <div class="kayit">
+            <p class="signup-text">Kullanıcı değil misiniz? <a routerLink="/signup" onClick="toggleform();"> Kayıt
+                Ol</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<router-outlet></router-outlet>

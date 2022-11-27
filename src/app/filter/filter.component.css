@@ -1,0 +1,8 @@
+.filter-container{
+    
+    background-color: rgb(241, 235, 235);
+    
+}
+input[type=radio]{
+    margin-left: 10px;
+}

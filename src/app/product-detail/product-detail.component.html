@@ -1,0 +1,37 @@
+
+<app-nav></app-nav>
+<div class="container mt-5 mb-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="images p-3">
+                            <div class="text-center p-4">
+                                 <img id="main-image" src="{{products.image}}" width="80%" />
+                            </div>
+                        <!--   <div class="thumbnail text-center"> <img onclick="change_image(this)"
+                                    src="{{products.image}}" width="70"> <img onclick="change_image(this)"
+                                    src="{{products.image}}" width="70"> 
+                                </div>--> 
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-3">
+                        <div class="product p-4">
+                            <div class="mt-4 mb-3 "> <span class="text-uppercase text-muted brand"></span>
+                                <h5 class="text-uppercase" >{{products.name}}</h5>
+                                <div class="price d-flex flex-row align-items-center"> <span
+                                        class="act-price">Fiyat : {{products.price}} TL</span>
+                                </div>
+                            </div>
+                            <p class="about">{{products.details}}</p>
+                            <div class="cart mt-4 align-items-center"> 
+                                <button class="btn btn-danger text-uppercase mr-2 px-4" routerLink="/cart/{{products.id}}" (click)="addToCart(products)">Sepete Ekle</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

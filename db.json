@@ -1,0 +1,22 @@
+{
+  "signup": [
+    {
+      "id": 1,
+      "firtsname": "Edanur",
+      "email": "edanur_1200@hotmail.com",
+      "password": "12345"
+    },
+    {
+      "firstname": "Edanur",
+      "email": "e",
+      "password": "1",
+      "id": 2
+    },
+    {
+      "firstname": "e",
+      "email": "e",
+      "password": "1",
+      "id": 3
+    }
+  ]
+}

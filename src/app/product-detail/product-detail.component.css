@@ -1,0 +1,83 @@
+body {
+    background-color: #000
+}
+
+.card {
+    border: none;
+}
+
+.product {
+    background-color: white;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.brand {
+    font-size: 13px;
+}
+
+.act-price {
+    color: red;
+    font-weight: 700;
+}
+
+.dis-price {
+    text-decoration: line-through;
+}
+
+.about {
+    font-size: 16px;
+    color: rgb(91, 89, 89);
+}
+
+.color {
+    margin-bottom: 10px;
+}
+
+.label.radio {
+    cursor: pointer;
+}
+
+.label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.label.radio span {
+    padding: 2px 9px;
+    border: 2px solid #ff0000;
+    display: inline-block;
+    color: #ff0000;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.label.radio input:checked+span {
+    border-color: #ff0000;
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #c79b9b !important;
+    border-color: #ff0000 !important;
+}
+/*Buton üzerinde geldiğinde renk değiştirme*/
+.btn-danger:hover {
+    background-color: #da0606 !important;
+    border-color: #da0606 !important;
+}
+
+.btn-danger:focus {
+    box-shadow: none;
+}
+
+.cart i {
+    margin-right: 50px;
+}
+.col-md-6{
+    background-color: rgb(246, 246, 246);
+}

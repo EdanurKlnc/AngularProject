@@ -1,0 +1,38 @@
+<section class="main-section">
+    <div class="container">
+      <div class="user signupbox">
+        <div class="imagebox">
+            <img src="/assets/shopping.jpg">
+          </div>
+        <div class="formbox">
+          <div class="form">
+            <h2>Kayıt Ol</h2>
+
+            <form [formGroup]="signupForm" (ngSubmit)="signup()">
+
+              <div class="mb-3">
+                <input  type="text" id="fname" placeholder="Ad Soyad" formControlName="firstname">
+              </div>  
+               <div class="mb-3">
+                <input  type="text" id="email" placeholder="E-mail" formControlName="email">
+              </div>
+  
+              <div class="mb-3">
+                <input  formControlName="password" type="password"  id="exampleInputPassword1" placeholder="Şifre">
+              </div>
+  
+  
+              <button type="submit" class="btnkayit" >Kayıt Ol</button>
+            </form>
+            <div class="kayit">
+              <p class="signup-text">Mevcut hesabınız var mı? <a routerLink="/login" onClick="toggleform();"> Giriş Yap</a>
+              </p>
+            </div>
+          
+          </div>
+        </div>
+       
+      </div>
+  
+    </div>
+  </section>

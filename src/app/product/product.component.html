@@ -1,0 +1,44 @@
+<app-nav></app-nav>
+<app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
+<app-filter [all]="getTotalAll()" [alt]="getTotalAlt()" [ust]="getTotalUst()"
+    (filterRadioButtonSelectionChanged)="onFilterRadioButtonChanged($event)"></app-filter>
+    <section class="product">
+        <div class="row mt-400 mt-xs-20">
+            
+            <div class="col-lg-3 mb-5" *ngFor="let p of products">
+                <!--searchText === '' || p.name.toLowerCase().includes(searchText)"-->
+                <!--productCountRadioButton === 'All' || productCountRadioButton === p.type -->
+                <div *ngIf="searchText === '' || p.name.toLowerCase().includes(searchText) ">
+                    <!--Search aramaya göre listeleme-->
+                    <div *ngIf="productCountRadioButton === 'All' || productCountRadioButton === p.type">
+                        <!--Kategoriye göre filteleme-->
+                        <div class="box"
+                            [ngStyle]="{backgroundColor: p.available === 'Stokta var' ? '#D5F5E3' : '#FADBD8'}">
+                            
+                                <div >
+                                    <a href="#" routerLink="/productdetail/{{p.id}}">
+                                    <img  src="{{p.image}}" width="50%">   </a>
+                                </div>
+                                <div class="mt-2">
+                                    <h6>{{p.name}}</h6>
+                                </div>
+                         
+                            <div class="details">
+                                <div class="product-type"
+                                    [ngStyle]="{color: p.available === 'Stokta var' ? 'Green': 'Red' }">{{p.available}}
+                                </div>
+                                <ul>
+                                <div class="details"><b>Fiyat : </b>{{p.price}} TL</div>
+                                <div class="details"><b>Renk : </b>{{p.color}}</div></ul>
+                            </div>
+    
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-danger btn-sm mt-2" routerLink="/productdetail/{{p.id}}">Ürüne git</button>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

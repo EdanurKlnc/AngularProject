@@ -1,0 +1,22 @@
+.navbar{
+    background-color: rgb(22, 18, 18);
+}
+.navbar-light .navbar-nav .nav-link{
+    color:white;
+    font-size: 18px;
+}
+.navbar-brand {
+    color: white ;
+    font-size: 25px;
+}
+.nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    text-decoration:underline;
+}
+.cart-adet{
+    color: white;
+    position: relative;
+}

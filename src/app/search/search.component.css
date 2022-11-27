@@ -1,0 +1,15 @@
+.search{
+    padding: 15px;
+    color: black;
+    font-style:inherit;
+    background-color: #d6edff;
+}
+.input{
+   border-radius: 2px;
+ }
+ .filter-container{
+    margin: 10px 20px;
+}
+input[type=radio]{
+    margin-left: 10px;
+}

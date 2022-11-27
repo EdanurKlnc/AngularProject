@@ -1,0 +1,18 @@
+<section class="filter">
+  <div class="filter-container">
+    <span>Filtrele:</span>
+    <input type="radio" name="filter" value="All" [(ngModel)]="selectedRadioButtonValue"
+      (change)="onRadioButtonSelectionChanged()" />
+    <span>{{'Tüm Ürünler ('+all+')'}}</span>
+
+    <input type="radio" name="filter" value="Alt" [(ngModel)]="selectedRadioButtonValue"
+      (change)="onRadioButtonSelectionChanged()" />
+    <span>{{'Alt Giyim ('+alt+')'}}</span>
+
+    <input type="radio" name="filter" value="Üst" [(ngModel)]="selectedRadioButtonValue"
+      (change)="onRadioButtonSelectionChanged()" />
+    <span>{{'Üst Giyim ('+ust+')'}}</span>
+
+
+  </div>
+</section>

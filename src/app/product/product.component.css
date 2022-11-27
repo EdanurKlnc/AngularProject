@@ -1,0 +1,30 @@
+.product{
+    padding: 50px 100px;
+}
+.box{
+    background-color:#ffff ;
+    padding: 10px 10px;
+    border-radius: 10px;
+
+}
+img{
+    margin: auto;
+    display:block;
+}
+h6{
+    color: black;
+   text-align: center;
+   text-decoration: none;
+}
+.product-type{
+    text-align: center;
+    font-size: 18px;
+
+}
+
+@media screen and (max-width:600px) {
+    .product{
+        background-color: rgb(201, 145, 193);
+        padding: 50px 10px;
+    }
+}

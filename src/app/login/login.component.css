@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    background-color: #fcc8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+section .container {
+    overflow: hidden;
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+section .container .user {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+section .container .user .imagebox {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transition: 1s;
+}
+
+section .container .user .imagebox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .container .user .formbox {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: 1s;
+}
+
+section .container .user .formbox .form h2 {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+section .container .user .formbox .form input {
+    position: relative;
+    width: 100%;
+    height: 50px !important;
+    padding: 0px 10px;
+    background-color: #f5f5f5;
+    color: #333;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    box-shadow: none;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.btngiris{
+    background-color: rgb(102, 156, 248);
+    padding: 8px 10px;
+    color: white;
+    border: none;
+    margin-top: 20px;
+}
+.kayit{
+   margin-top: 40px;
+}
+
+
+
+section .container .signinbox .formbox {
+    left: 0;
+}
+
+section .container.active .signinbox .formbox {
+    left: 100%;
+    transform: rotate(360deg);
+}
+
+section .container .signinbox .imagebox {
+    left: 0;
+}
+
+section .container.active .signinbox .imagebox {
+    left: -100%;
+}
+
+@media (max-width:750px) {
+    section .container {
+        max-width: 400px;
+    }
+
+    section .container .imagebox {
+        display: none;
+    }
+
+    section .container .user .formbox {
+        width: 100%
+    }
+}
