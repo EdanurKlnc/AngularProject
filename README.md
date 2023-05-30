@@ -1,6 +1,5 @@
 # AngularProject
 ![angular](https://onerbilisim.com/wp-content/uploads/2021/09/Angular-logo.png)
-
 Bu proje [Angular CLI](https://github.com/angular/angular-cli)  14.2.8. versiyonu ile oluşturulmuştur.
 
 ## Proje İçeriği
